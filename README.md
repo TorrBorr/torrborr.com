@@ -1,3 +1,3 @@
 # TorrBorr's Personal Site
 
-[torrborr.com](torrborr.com)
+[torrborr\.com](http://torrborr.com/)

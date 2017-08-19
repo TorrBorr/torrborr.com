@@ -1595,6 +1595,13 @@ constelation-event_@^14.0.0:
   optionalDependencies:
     hammerjs "^2.0.8"
 
+constelation-space@^15.1.0:
+  version "15.1.0"
+  resolved "https://registry.yarnpkg.com/constelation-space/-/constelation-space-15.1.0.tgz#1f06602d22132e020b949c97f2a58bbd1982920c"
+  optionalDependencies:
+    glamor "^2.20.24"
+    glamor-react "^3.0.0-1"
+
 constelation-style_@^14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/constelation-style_/-/constelation-style_-14.0.0.tgz#ed9114982be1fa2fe9ce0b53d4194bc8ccd5bde2"

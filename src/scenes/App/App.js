@@ -3,16 +3,14 @@
 
 import 'glamor-reset'
 
-import { Col, Row } from 'constelation-view'
+import { Col } from 'constelation-view'
 import { Provider } from 'mobx-react'
+import Animate_ from 'constelation-animate_'
 import React from 'react'
-import Text from 'constelation-text'
+import Style_ from 'constelation-style_'
 import mobx from 'mobx'
 
 import AppOverlay from 'stores/AppOverlay'
-
-import Overlay from './_/Overlay'
-import OpacityOverlay from './_/OpacityOverlay'
 
 // }}}
 
@@ -38,6 +36,37 @@ const stores = {
   AppOverlay: new AppOverlay(),
 }
 
+const PURPLE = '#311B92'
+
+const containerEnterAnimation = {
+  // '0%': {
+  //   backgroundColor: PURPLE,
+  // },
+  // '100%': {
+  //   backgroundColor: 'white',
+  // }
+  '0%': {opacity: 1, backgroundColor: PURPLE, visibility: 'visible'},
+  '40%': {opacity: 1, backgroundColor: PURPLE, visibility: 'visible'},
+  '100%': {opacity: 0},
+}
+
+
+// const fadeIn = Radium.keyframes({
+//   '0%': {opacity: 1, backgroundColor: 'black', visibility: 'visible'},
+//   '40%': {opacity: 1, backgroundColor: 'black', visibility: 'visible'},
+//   '100%': {opacity: 0},
+// }, 'fadeIn')
+//
+//
+// const titleFadeIn = Radium.keyframes({
+//   '0%': {color: 'black'},
+//   '20%': {color: 'white'},
+//   '30%': {color: 'white'},
+//   // '40%': {color: 'white'},
+//   '70%': {color: '#111'},
+//   '100%': {color: '#111'},
+//   }, 'titleFadeIn')
+
 export default class App extends React.Component {
   render() {
     return (
@@ -56,4 +85,3 @@ export default class App extends React.Component {
     )
   }
 }
-

@@ -29,7 +29,7 @@ export default (locals: Object, callback: Function) => {
       htmlTemplate({
         css,
         html,
-        title: 'Constelation',
+        title: 'TorrBorr',
         glamorIds: JSON.stringify(ids),
         js: [locals.assets.vendor, locals.assets.main],
         // js: Object.keys(locals.assets).map(key => locals.assets[key]),
