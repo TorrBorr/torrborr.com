@@ -68,6 +68,16 @@ export default class Home extends React.Component {
           </Style_>
         </Animate_>
 
+        {/* <img */}
+        {/*   src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAvNAAAAJDQ0NDE3Mzg1LTk3ZDUtNDhlOC05ZTg0LTNiM2Q1NDUwMWE5Yw.jpg" */}
+        {/*   height={128} */}
+        {/*   width={128} */}
+        {/*   style={{ */}
+        {/*     borderRadius: 64, */}
+        {/*     opacity: 0.7, */}
+        {/*   }} */}
+        {/* /> */}
+
         <Style
           zIndex={2}
         >
