@@ -10,7 +10,7 @@ import Text from 'constelation-text'
 // }}}
 
 const PURPLE = '#311B92'
-const ANIM_DURATION = '3000ms'
+const ANIM_DURATION = '4000ms'
 
 const textAnimation = {
     '10%': {color: PURPLE},
@@ -70,15 +70,6 @@ export default class Home extends React.Component {
         <Style
           zIndex={2}
         >
-          {/* <Animate */}
-          {/*   duration={'4000ms'} */}
-          {/*   easing='ease-out' */}
-          {/*   keyframes={{ */}
-          {/*     '0%': {transform: 'translateY(70px)'}, */}
-          {/*     '70%': {transform: 'translateY(70px)'}, */}
-          {/*     '80%': {transform: 'none'} */}
-          {/*   }} */}
-          {/* > */}
           <Animate_
             duration={ANIM_DURATION}
             easing='ease-out'
@@ -94,160 +85,18 @@ export default class Home extends React.Component {
               TorrBorr
             </Text>
           </Animate_>
-        {/* </Animate> */}
         </Style>
-
-      {/*   <Space size={56} /> */}
-      {/*  */}
-      {/*   <Animate_ */}
-      {/*     duration={ANIM_DURATION} */}
-      {/*     easing='ease-out' */}
-      {/*     keyframes={{ */}
-      {/*       '0%': { */}
-      {/*         opacity: 0, */}
-      {/*       }, */}
-      {/*       '75%': { */}
-      {/*         opacity: 0, */}
-      {/*       }, */}
-      {/*       '90%': { */}
-      {/*         opacity: 1, */}
-      {/*       } */}
-      {/*     }} */}
-      {/*     // keyframes={{ */}
-      {/*     //   '0%': { */}
-      {/*     //     opacity: 0, */}
-      {/*     //   }, */}
-      {/*     //   '60%': { */}
-      {/*     //     opacity: 0, */}
-      {/*     //   }, */}
-      {/*     //   '100%': { */}
-      {/*     //     opacity: 1, */}
-      {/*     //   } */}
-      {/*     // }} */}
-      {/*   > */}
-      {/*   <Text */}
-      {/*     size={24} */}
-      {/*     fontFamily={`'Roboto', sans-serif`} */}
-      {/*     weight={300} */}
-      {/*     // spacing={2} */}
-      {/*     color={PURPLE} */}
-      {/*   > */}
-      {/*     <strong>Victoria Aston</strong> is a Data Scientist */}
-      {/*   </Text> */}
-      {/* </Animate_> */}
 
         <Space size={56} />
 
-        <Animate
-          duration={ANIM_DURATION}
-          easing='ease-out'
-          // keyframes={{
-          //   '0%': {
-          //     opacity: 0,
-          //   },
-          //   '60%': {
-          //     opacity: 0,
-          //   },
-          //   '80%': {
-          //     opacity: 1,
-          //   }
-          // }}
-            // keyframes={{
-            //   '0%': {
-            //     opacity: 0,
-            //   },
-            //   '80%': {
-            //     opacity: 0,
-            //   },
-            //   '100%': {
-            //     opacity: 1,
-            //   }
-            // }}
-            keyframes={{
-              '0%': {
-                opacity: 0,
-              },
-              '60%': {
-                opacity: 0,
-              },
-              '80%': {
-                opacity: 1,
-              }
-            }}
-        >
-          <Link url='https://github.com/TorrBorr' label='Github' />
-        </Animate>
+        <Link url='https://github.com/TorrBorr' label='Github' />
 
         <Space size={8} />
 
-        <Animate
-          duration={ANIM_DURATION}
-          easing='ease-out'
-          // keyframes={{
-          //   '0%': {
-          //     opacity: 0,
-          //   },
-          //   '65%': {
-          //     opacity: 0,
-          //   },
-          //   '85%': {
-          //     opacity: 1,
-          //   }
-          // }}
-          // keyframes={{
-          //   '0%': {
-          //     opacity: 0,
-          //   },
-          //   '80%': {
-          //     opacity: 0,
-          //   },
-          //   '100%': {
-          //     opacity: 1,
-          //   }
-          // }}
-          keyframes={{
-            '0%': {
-              opacity: 0,
-            },
-            '60%': {
-              opacity: 0,
-            },
-            '80%': {
-              opacity: 1,
-            }
-          }}
-        >
         <Link url='https://www.linkedin.com/in/victoria-aston/' label='LinkedIn' />
-      </Animate>
 
         <Space size={56} />
 
-        <Animate_
-          duration={ANIM_DURATION}
-          easing='ease-out'
-          keyframes={{
-            '0%': {
-              opacity: 0,
-            },
-            '75%': {
-              opacity: 0,
-            },
-            '90%': {
-              opacity: 1,
-            }
-          }}
-          // keyframes={{
-          //   '0%': {
-          //     opacity: 0,
-          //   },
-          //   '60%': {
-          //     opacity: 0,
-          //   },
-          //   '100%': {
-          //     opacity: 1,
-          //   }
-          // }}
-        >
         <Text
           size={24}
           fontFamily={`'Roboto', sans-serif`}
@@ -257,7 +106,6 @@ export default class Home extends React.Component {
         >
           <strong>Victoria Aston</strong> == Data Scientist
         </Text>
-      </Animate_>
 
       </Col>
     )
