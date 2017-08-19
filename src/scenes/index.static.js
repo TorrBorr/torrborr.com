@@ -8,7 +8,6 @@ import Route from 'react-router/lib/Route'
 import App from './App'
 import Home from './Home'
 import NotFound from './NotFound'
-import Other from './Other'
 
 // }}}
 
