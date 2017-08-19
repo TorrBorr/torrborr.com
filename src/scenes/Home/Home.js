@@ -10,6 +10,7 @@ import Text from 'constelation-text'
 // }}}
 
 const PURPLE = '#311B92'
+const PURPLE_SECONDARY = '#6200EA'
 const ANIM_DURATION = '4000ms'
 
 const textAnimation = {
@@ -76,7 +77,7 @@ export default class Home extends React.Component {
             keyframes={textAnimation}
           >
             <Text
-              size={48}
+              size={56}
               fontFamily={`'Roboto', sans-serif`}
               // weight={300}
               spacing={2}
@@ -89,22 +90,21 @@ export default class Home extends React.Component {
 
         <Space size={56} />
 
-        <Link url='https://github.com/TorrBorr' label='Github' />
+        <Link url='https://www.linkedin.com/in/victoria-aston/' label='LinkedIn' />
 
         <Space size={8} />
 
-        <Link url='https://www.linkedin.com/in/victoria-aston/' label='LinkedIn' />
+        <Link url='https://github.com/TorrBorr' label='Github' />
 
         <Space size={56} />
 
         <Text
           size={24}
           fontFamily={`'Roboto', sans-serif`}
-          weight={300}
-          // spacing={2}
+          // weight={300}
           color={PURPLE}
         >
-          <strong>Victoria Aston</strong> == Data Scientist
+          Victoria Aston == Data Scientist
         </Text>
 
       </Col>
